@@ -16,6 +16,7 @@ out
 # gradle
 build
 .gradle
+gradle-vm
 
 # other
 eclipse
@@ -23,3 +24,4 @@ run
 
 # Files from Forge MDK
 forge*changelog.txt
+/gadle-vm/
