@@ -19,6 +19,7 @@ public class Items {
 
     public static void register(IEventBus modEventBus) {
         items.put("PLATE", ITEMS.register("plate", () -> new Plate(new Item.Properties())));
+        items.put("FLINT", ITEMS.register("flint", () -> new Flint(new Item.Properties().durability(64))));
         ITEMS.register(modEventBus);
     }
 }
