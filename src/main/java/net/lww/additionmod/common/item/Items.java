@@ -8,9 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 public class Items {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, AdditionMod.MODID);
@@ -20,6 +18,7 @@ public class Items {
     public static void register(IEventBus modEventBus) {
         items.put("PLATE", ITEMS.register("plate", () -> new Plate(new Item.Properties())));
         items.put("FLINT", ITEMS.register("flint", () -> new Flint(new Item.Properties().durability(64))));
+        items.put("GUN", ITEMS.register("gun", () -> new Gun(new Item.Properties().durability(20))));
         ITEMS.register(modEventBus);
     }
 }
